@@ -28,4 +28,18 @@ x4b <- c(1:25) #b
 x4b <- c(((2^(x4b))/x4b) + ((3^(x4b))/(x4b^2)))
 sum(x4b)
 
+# 5 
+x5 <- c(1:30) #a
+paste0('label ', x5)
+
+paste0('fn', x5) #b
+
+# 6
+set.seed(50)
+xVec <- sample(0:999, 250, replace = T)
+yVec <- sample(0:999, 250, replace = T)
+
+# 7 
+x7a <- yVec[yVec > 600] #a
+x7b <- order(x7a) #b
 
