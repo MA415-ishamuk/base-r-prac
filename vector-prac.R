@@ -39,7 +39,30 @@ set.seed(50)
 xVec <- sample(0:999, 250, replace = T)
 yVec <- sample(0:999, 250, replace = T)
 
+yVec[2:250] - xVec[1:249] #a
+sin(yVec[1:249])/cos(xVec[2:250]) #b
+x6c <- c(1:248) #c
+xVec[x6c] + (2*(xVec[x6c + 1])) - (xVec[x6c + 2])
+x6d <- c(1:249) #d
+sum((exp(-(xVec[x6d + 1])))/(xVec[x6d] + 10))
+
 # 7 
 x7a <- yVec[yVec > 600] #a
 x7b <- order(x7a) #b
+x7c <- xVec[x7b] #c
+x7d1 <- mean(xVec) #d
+abs(xVec - x7d1)^(1/2)
+x7e_max_in <- order(yVec, decreasing = T)[1] #e
+x7e_max <- yVec[x7e_max_in]
+sum(x7e_max - 200 <= yVec)
+sum(xVec %% 2 == 0) #f
+x7g_order <- order(yVec, decreasing = F) #g
+xVec[x7g_order]
+x7h <- seq(1,250,3) #h
+yVec[x7h]
+
+# 8 
+x8 <- seq(2,38,2)
+x8_vec <- c(1,cumprod(x8/(x8 + 1)))
+sum(x8_vec)
 
