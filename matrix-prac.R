@@ -16,5 +16,18 @@ matE[abs(rows - cols) == 1] <- 1
 matE
 
 # 4
-x4 <- c(0,1,2,3,4)
+x4 <- c(0:4)
 outer(x4,x4,"+")
+
+# 5 
+x5a <- 5 #a
+x5a1 <- c(0:(x5a-1)) 
+outer(x5a1, x5a1, "+") %% (x5a)
+
+x5b <- 10 #b
+x5b1 <- c(0:(x5b-1)) 
+outer(x5b1, x5b1, "+") %% (x5b)
+
+x5c <- 9 #c
+x5c1 <- c(0:(x5c-1))
+outer(x5c1, x5c1, "-") %% (x5c)
