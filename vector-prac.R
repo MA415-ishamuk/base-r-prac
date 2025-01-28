@@ -48,8 +48,11 @@ sum((exp(-(xVec[x6d + 1])))/(xVec[x6d] + 10))
 
 # 7 
 x7a <- yVec[yVec > 600] #a
+x7a
 x7b <- order(x7a) #b
+x7b
 x7c <- xVec[x7b] #c
+x7c
 x7d1 <- mean(xVec) #d
 abs(xVec - x7d1)^(1/2)
 x7e_max_in <- order(yVec, decreasing = T)[1] #e
