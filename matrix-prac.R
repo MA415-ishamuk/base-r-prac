@@ -39,3 +39,12 @@ b6 <- c(7,-1,-3,5,17)
 solve(A6,b6)
 
 # 7
+set.seed(75)
+aMat <- matrix(sample(10, size = 60, replace = T), nr = 6)
+
+rowSums(aMat > 4) #a --> could also use apply()
+x7b <- aMat == 7 #b --> could also use apply()
+x7b_occur <- rowSums(x7b)
+which(x7b_occur == 2)
+
+
