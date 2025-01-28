@@ -31,3 +31,10 @@ outer(x5b1, x5b1, "+") %% (x5b)
 x5c <- 9 #c
 x5c1 <- c(0:(x5c-1))
 outer(x5c1, x5c1, "-") %% (x5c)
+
+# 6
+A6 <- matrix(0,5,5)
+A6 <- abs(col(A6) - row(A6)) + 1
+b6 <- c(7,-1,-3,5,17)
+solve(A6,b6)
+
