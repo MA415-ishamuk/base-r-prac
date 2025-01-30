@@ -46,5 +46,8 @@ rowSums(aMat > 4) #a --> could also use apply()
 x7b <- aMat == 7 #b --> could also use apply()
 x7b_occur <- rowSums(x7b)
 which(x7b_occur == 2)
+xc7_sums <- colSums(aMat) #c
+which(outer(xc7_sums, xc7_sums, "+") > 75, arr.ind = T)
 
+# 8 
 
