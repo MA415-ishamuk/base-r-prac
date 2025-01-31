@@ -50,4 +50,15 @@ xc7_sums <- colSums(aMat) #c
 which(outer(xc7_sums, xc7_sums, "+") > 75, arr.ind = T)
 
 # 8 
+j <- c(1:5) #a -> can also do: sum( (1:20)^4 ) * sum( 1/(4:8) )
+x8a1 <- 3 + j
+x8a1 <- rep(x8a1, each = 20)
+i <- c(1:20)
+x8a2 <- (i^4)/(x8a1)
+sum(x8a2)
 
+x8b1 <- 3 + outer(1:20, 1:5) #b
+x8b2 <- (i^4)/(x8b1)
+sum(x8b2)
+
+sum( outer(1:10,1:10,function(i,j){ (i>=j)*i^4/(3+i*j) }) ) #c -> needed help!
